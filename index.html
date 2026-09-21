@@ -64,6 +64,7 @@
         <label class="mini-field"><span>Body type</span><select id="bodyType"><option>Any body type</option><option>Coupe</option><option>SUV</option><option>Saloon</option></select></label>
         <label class="mini-field"><span>Fuel</span><select id="fuel"><option>Any fuel</option><option>Petrol</option><option>Electric</option><option>Hybrid</option></select></label>
       </div>
+      <button class="reset-inline" id="resetButton" type="button">Reset filters ↗</button>
     </section>
 
     <section class="content-section" id="inventory">
@@ -75,7 +76,7 @@
         <article class="car-card" data-make="Audi" data-price="mid"><div class="card-image"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=85" alt="Audi RS e-tron GT" /><button class="favorite" aria-label="Add Audi RS e-tron GT to favorites">♡</button><span class="card-badge">Electric</span></div><div class="card-body"><div class="card-title"><div><h3>Audi RS e-tron GT</h3><p>2024 · 1,100 mi</p></div><strong>$96,400</strong></div><div class="card-specs"><span>Electric</span><span>Automatic</span><span>AWD</span></div></div></article>
         <article class="car-card" data-make="Lexus" data-price="mid"><div class="card-image"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=85" alt="Lexus LC 500" /><button class="favorite" aria-label="Add Lexus LC 500 to favorites">♡</button></div><div class="card-body"><div class="card-title"><div><h3>Lexus LC 500</h3><p>2021 · 22,900 mi</p></div><strong>$71,800</strong></div><div class="card-specs"><span>5.0L</span><span>Automatic</span><span>Petrol</span></div></div></article>
       </div>
-      <div class="empty-state" id="emptyState" hidden><strong>No cars match these filters.</strong><span>Try widening your search or reset the filters.</span><button class="reset-button" id="resetButton" type="button">Reset search ↗</button></div>
+      <div class="empty-state" id="emptyState" hidden><strong>No cars match these filters.</strong><span>Try widening your search or reset the filters.</span></div>
     </section>
 
     <section class="split-section" id="services">

@@ -66,7 +66,7 @@ const filterInventory = () => {
 };
 
 searchButton?.addEventListener('click', filterInventory);
-query('#resetButton')?.addEventListener('click', () => {
+const resetSearch = () => {
   ['#make', '#price', '#year', '#bodyType', '#fuel'].forEach((selector) => {
     const field = query(selector);
     if (field) field.selectedIndex = 0;
@@ -74,7 +74,8 @@ query('#resetButton')?.addEventListener('click', () => {
   cards.forEach((card) => { card.hidden = false; });
   query('#emptyState').hidden = true;
   showToast('Search reset');
-});
+};
+query('#resetButton')?.addEventListener('click', resetSearch);
 
 document.querySelectorAll('.tab').forEach((tab) => {
   tab.addEventListener('click', () => {

@@ -65,6 +65,7 @@ select, input { appearance: none; background: transparent; border: 0; border-bot
 .search-button b, .outline-button span { color: var(--gold); font-size: 17px; font-weight: 400; }
 .advanced-toggle { background: transparent; color: #64665e; font-family: var(--mono); font-size: 10px; margin-top: 22px; padding: 0; }
 .advanced-toggle span { color: var(--gold); margin-left: 7px; }
+.reset-inline { background: transparent; color: #8d6d40; font-family: var(--mono); font-size: 10px; margin: 20px 0 0 18px; padding: 0; }
 .advanced-row { border-top: 1px solid #c4c5bc; display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); margin-top: 20px; padding-top: 20px; }
 .content-section { padding: 105px 5vw 120px; }
 .section-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 40px; }
