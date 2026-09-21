@@ -21,8 +21,8 @@
       <a href="#sell">Sell your car</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-button" aria-label="Open notifications"><span class="notification-dot"></span>◌</button>
-      <button class="account-button"><span class="avatar">JD</span><span class="account-name">James Doe</span><span class="chevron">⌄</span></button>
+      <button class="icon-button" type="button" id="notificationsButton" aria-label="Open notifications"><span class="notification-dot"></span>◌</button>
+      <button class="account-button" type="button" id="accountButton" aria-label="Open account menu"><span class="avatar">JD</span><span class="account-name">James Doe</span><span class="chevron">⌄</span></button>
       <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
@@ -56,9 +56,9 @@
         <label class="field"><span>Make & model</span><select id="make"><option value="">Any make or model</option><option>BMW</option><option>Porsche</option><option>Mercedes-Benz</option><option>Audi</option></select></label>
         <label class="field"><span>Price range</span><select id="price"><option value="">Any price</option><option>Under $50,000</option><option>$50,000 — $100,000</option><option>Over $100,000</option></select></label>
         <label class="field"><span>Location</span><select><option>Anywhere in the US</option><option>New York, NY</option><option>Los Angeles, CA</option><option>Miami, FL</option></select></label>
-        <button class="search-button" id="searchButton"><span>Search inventory</span><b>↗</b></button>
+        <button class="search-button" type="button" id="searchButton" aria-label="Search inventory"><span>Search inventory</span><b>↗</b></button>
       </div>
-      <button class="advanced-toggle" id="advancedToggle">＋ Advanced search <span>3 filters</span></button>
+      <button class="advanced-toggle" type="button" id="advancedToggle" aria-expanded="false">＋ Advanced search <span>3 filters</span></button>
       <div class="advanced-row" id="advancedRow" hidden>
         <label class="mini-field"><span>Year</span><select id="year"><option>Any year</option><option>2024+</option><option>2020+</option><option>2015+</option></select></label>
         <label class="mini-field"><span>Body type</span><select id="bodyType"><option>Any body type</option><option>Coupe</option><option>SUV</option><option>Saloon</option></select></label>

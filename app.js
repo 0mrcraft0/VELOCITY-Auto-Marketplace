@@ -24,8 +24,12 @@ const saveFavorites = (favorites) => {
 advancedToggle?.addEventListener('click', () => {
   const isOpen = !advancedRow.hidden;
   advancedRow.hidden = isOpen;
+  advancedToggle.setAttribute('aria-expanded', String(!isOpen));
   advancedToggle.firstChild.textContent = isOpen ? '＋ Advanced search ' : '− Hide advanced search ';
 });
+
+query('#notificationsButton')?.addEventListener('click', () => showToast('You are all caught up'));
+query('#accountButton')?.addEventListener('click', () => showToast('Account menu coming soon'));
 
 document.querySelectorAll('.favorite').forEach((button, index) => {
   const savedFavorites = getSavedFavorites();
