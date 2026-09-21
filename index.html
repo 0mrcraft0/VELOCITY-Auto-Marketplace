@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111210" />
+  <title>VELOCITY — Curated automotive marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Velocity home"><span class="brand-mark">V</span><span>VELOCITY</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="#inventory">Browse cars</a>
+      <a href="#services">Services</a>
+      <a href="#sell">Sell your car</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Open notifications"><span class="notification-dot"></span>◌</button>
+      <button class="account-button"><span class="avatar">JD</span><span class="account-name">James Doe</span><span class="chevron">⌄</span></button>
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#inventory">Browse cars <span>↗</span></a>
+      <a href="#services">Services <span>↗</span></a>
+      <a href="#sell">Sell your car <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE ART OF THE DRIVE</p>
+        <h1>Find the car<br /><em>that moves you.</em></h1>
+        <p class="hero-description">A considered collection of exceptional cars, verified and ready for their next chapter.</p>
+        <div class="hero-stats">
+          <div><strong>12,480</strong><span>Cars available</span></div>
+          <div><strong>98%</strong><span>Customer satisfaction</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1500&q=88" alt="Silver Porsche sports car" />
+        <div class="hero-tag"><span class="pulse"></span> Just listed <b>2024 Porsche 911 Carrera</b></div>
+        <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><i>↓</i></div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Search inventory">
+      <div class="search-tabs"><button class="tab active" type="button" data-mode="buy">Buy a car</button><button class="tab" type="button" data-mode="sell">Sell a car</button></div>
+      <div class="search-grid">
+        <label class="field"><span>Make & model</span><select id="make"><option value="">Any make or model</option><option>BMW</option><option>Porsche</option><option>Mercedes-Benz</option><option>Audi</option></select></label>
+        <label class="field"><span>Price range</span><select id="price"><option value="">Any price</option><option>Under $50,000</option><option>$50,000 — $100,000</option><option>Over $100,000</option></select></label>
+        <label class="field"><span>Location</span><select><option>Anywhere in the US</option><option>New York, NY</option><option>Los Angeles, CA</option><option>Miami, FL</option></select></label>
+        <button class="search-button" id="searchButton"><span>Search inventory</span><b>↗</b></button>
+      </div>
+      <button class="advanced-toggle" id="advancedToggle">＋ Advanced search <span>3 filters</span></button>
+      <div class="advanced-row" id="advancedRow" hidden>
+        <label class="mini-field"><span>Year</span><select id="year"><option>Any year</option><option>2024+</option><option>2020+</option><option>2015+</option></select></label>
+        <label class="mini-field"><span>Body type</span><select id="bodyType"><option>Any body type</option><option>Coupe</option><option>SUV</option><option>Saloon</option></select></label>
+        <label class="mini-field"><span>Fuel</span><select id="fuel"><option>Any fuel</option><option>Petrol</option><option>Electric</option><option>Hybrid</option></select></label>
+      </div>
+    </section>
+
+    <section class="content-section" id="inventory">
+      <div class="section-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured cars</h2></div><a class="text-link" href="#inventory">View all inventory <span>↗</span></a></div>
+      <div class="car-grid">
+        <article class="car-card" data-make="Porsche" data-price="high"><div class="card-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Porsche 911" /><button class="favorite" aria-label="Add Porsche 911 to favorites">♡</button><span class="card-badge">New arrival</span></div><div class="card-body"><div class="card-title"><div><h3>Porsche 911 Carrera</h3><p>2024 · 3,200 mi</p></div><strong>$128,900</strong></div><div class="card-specs"><span>3.0L</span><span>Automatic</span><span>Petrol</span></div></div></article>
+        <article class="car-card" data-make="BMW" data-price="mid"><div class="card-image"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=85" alt="BMW M4" /><button class="favorite" aria-label="Add BMW M4 to favorites">♡</button></div><div class="card-body"><div class="card-title"><div><h3>BMW M4 Competition</h3><p>2023 · 12,400 mi</p></div><strong>$78,000</strong></div><div class="card-specs"><span>3.0L</span><span>Automatic</span><span>Petrol</span></div></div></article>
+        <article class="car-card" data-make="Mercedes-Benz" data-price="high"><div class="card-image"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=85" alt="Mercedes-Benz G-Class" /><button class="favorite" aria-label="Add Mercedes G-Class to favorites">♡</button></div><div class="card-body"><div class="card-title"><div><h3>Mercedes-Benz G 550</h3><p>2022 · 18,650 mi</p></div><strong>$104,500</strong></div><div class="card-specs"><span>4.0L</span><span>Automatic</span><span>Petrol</span></div></div></article>
+        <article class="car-card" data-make="Audi" data-price="mid"><div class="card-image"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=85" alt="Audi RS e-tron GT" /><button class="favorite" aria-label="Add Audi RS e-tron GT to favorites">♡</button><span class="card-badge">Electric</span></div><div class="card-body"><div class="card-title"><div><h3>Audi RS e-tron GT</h3><p>2024 · 1,100 mi</p></div><strong>$96,400</strong></div><div class="card-specs"><span>Electric</span><span>Automatic</span><span>AWD</span></div></div></article>
+        <article class="car-card" data-make="Lexus" data-price="mid"><div class="card-image"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=85" alt="Lexus LC 500" /><button class="favorite" aria-label="Add Lexus LC 500 to favorites">♡</button></div><div class="card-body"><div class="card-title"><div><h3>Lexus LC 500</h3><p>2021 · 22,900 mi</p></div><strong>$71,800</strong></div><div class="card-specs"><span>5.0L</span><span>Automatic</span><span>Petrol</span></div></div></article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden><strong>No cars match these filters.</strong><span>Try widening your search or reset the filters.</span><button class="reset-button" id="resetButton" type="button">Reset search ↗</button></div>
+    </section>
+
+    <section class="split-section" id="services">
+      <div class="split-copy"><p class="eyebrow">THE VELOCITY STANDARD</p><h2>More than a marketplace.<br /><em>A better way to move.</em></h2><p>Every car on Velocity is personally inspected, thoughtfully presented, and backed by people who care about the details.</p><a class="outline-button" href="#services">Explore our services <span>↗</span></a></div>
+      <div class="service-list"><div class="service-item"><span class="service-number">01</span><div><h3>Verified inventory</h3><p>Every listing is checked by our automotive specialists.</p></div><span class="service-arrow">↗</span></div><div class="service-item"><span class="service-number">02</span><div><h3>Seamless financing</h3><p>Clear, flexible options built around your life.</p></div><span class="service-arrow">↗</span></div><div class="service-item"><span class="service-number">03</span><div><h3>Concierge delivery</h3><p>Your next car, delivered wherever you are.</p></div><span class="service-arrow">↗</span></div></div>
+    </section>
+
+    <section class="brand-strip"><p class="eyebrow">SHOP BY MAKE</p><div class="brands"><button>BMW</button><button>PORSCHE</button><button>Mercedes-Benz</button><button>AUDI</button><button>LEXUS</button></div></section>
+
+    <section class="newsletter" id="sell"><div><p class="eyebrow">STAY IN THE KNOW</p><h2>The right car finds<br /><em>the right person.</em></h2></div><form id="newsletterForm"><label><span>Get new arrivals in your inbox</span><div class="email-wrap"><input type="email" placeholder="Your email address" required /><button aria-label="Subscribe">↗</button></div></label><small id="formMessage">Weekly, never noisy. Unsubscribe anytime.</small></form></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">V</span><span>VELOCITY</span></a><p>Exceptional cars. Considered differently.</p><div class="footer-links"><a href="#inventory">Inventory</a><a href="#services">About</a><a href="#sell">Contact</a><a href="#top">Instagram</a></div><small>© 2024 Velocity Motors</small></footer>
+  <div class="toast" id="toast" role="status">Inventory updated</div>
+  <script src="app.js"></script>
+</body>
+</html>
